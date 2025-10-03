@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        height: 98vh;
+        background: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url("https://i.redd.it/g38817mqb1361.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+      .headerContainer {
+        box-shadow: 0 0 5px white;
+      }
+    </style>
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <div class="container headerContainer w-75 mx-auto bg-dark mt-2 p-4">
+      <div class="row">
+        <h1 class="h1 text-white">GitHub Search Project</h1>
+      </div>
+      <div class="row mt-2">
+        <div class="col-10">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Enter GitHub Username"
+          />
+        </div>
+        <div class="col-2">
+          <button onclick="getUsersData()" class="btn btn-outline-light px-5">
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container headerContainer w-75 mx-auto mt-3 p-2">
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="https://img.freepik.com/free-vector/young-man-with-glasses-illustration_1308-174706.jpg?semt=ais_hybrid&w=740&q=80"
+                alt=""
+                width="100%"
+                height="230"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="h3 text-primary">GitHub userName</h3>
+              <p class="text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                exercitationem aut tenetur!
+              </p>
+              <button class="btn btn-primary">Profile Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <h4 class="h4 text-light">Repositories</h4>
+          <ul class="list-group">
+            <li class="list-group-item">github repository</li>
+            <li class="list-group-item">github repository</li>
+            <li class="list-group-item">github repository</li>
+            <li class="list-group-item">github repository</li>
+            <li class="list-group-item">github repository</li>
+            <li class="list-group-item">github repository</li>
+            <li class="list-group-item">github repository</li>
+            <li class="list-group-item">github repository</li>
+            <li class="list-group-item">github repository</li>
+            <li class="list-group-item">github repository</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
