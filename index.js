@@ -34,7 +34,9 @@ function getUsersData() {
           });
 
           reposdata.forEach((repos, index) => {
-            collection_lis[index].innerText = repos.html_url;
+            collection_lis[
+              index
+            ].innerHTML = `<a style='text-decoration:none;color:green' href="${repos.html_url}" target="_blank">${repos.html_url}</a>`;
             collection_lis[index].style.color = "green";
           });
         });
